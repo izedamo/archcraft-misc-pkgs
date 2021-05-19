@@ -1,9 +1,9 @@
 # Maintainer: Aditya Shakya <adi1090x@gmail.com>
 
-pkgname=grub2-theme-vimix
+pkgname=grub2-theme-default
 pkgver=1.0
 pkgrel=1
-pkgdesc="Vimix : A grub2 theme for archcraft OS."
+pkgdesc="The default grub2 theme for archcraft."
 arch=('any')
 license=('GPL')
 provides=($pkgname)
@@ -12,5 +12,5 @@ depends=()
 
 package() {
 	# copy whole dir recursively to destination
-	(find Vimix -type f -exec install -Dm 644 "{}" "$pkgdir/usr/share/grub/themes/{}" \;)
+	(find default -type f -exec install -Dm 644 "{}" "$pkgdir/usr/share/grub/themes/{}" \;)
 }

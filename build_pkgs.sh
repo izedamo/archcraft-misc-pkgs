@@ -2,7 +2,7 @@
 
 ## Dirs
 DIR="$(pwd)"
-PKGS=(`ls --hide={LICENSE,README.md,build_pkgs.sh,packages}`)
+PKGS=(`ls --hide={LICENSE,README.md,build_pkgs.sh,packages,build_aur_pkgs.sh,packages_aur}`)
 PKGDIR="$DIR/packages"
 
 ## Script Termination
