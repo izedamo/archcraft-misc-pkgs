@@ -1,0 +1,19 @@
+# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+
+pkgname=archcraft-startapp
+pkgver=1.0
+pkgrel=1
+pkgdesc="Archcraft OS Startup / Helper App."
+arch=('any')
+license=('GPL')
+provides=($pkgname)
+conflicts=($pkgname)
+depends=('midori')
+
+package() {
+	# copy whole dir recursively to destination
+	(find get_started -type f -exec install -Dm 644 "{}" "$pkgdir/usr/share/{}" \;)
+	# copy files
+	install -Dm 755 get_started.sh -t ${pkgdir}/usr/bin/
+	install -Dm 644 get_started.desktop -t ${pkgdir}/usr/share/applications/
+}

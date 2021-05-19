@@ -1,0 +1,15 @@
+# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+
+pkgname=lxdm-theme-archcraft
+pkgver=1.0
+pkgrel=1
+pkgdesc="The default lxdm theme for archcraft."
+arch=('any')
+license=('GPL')
+provides=($pkgname)
+conflicts=($pkgname)
+depends=('lxdm-gtk3')
+
+package() {
+	install -D -m644 archcraft/* -t ${pkgdir}/usr/share/lxdm/themes/archcraft
+}

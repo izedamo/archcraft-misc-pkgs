@@ -1,0 +1,16 @@
+# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+
+pkgname=archcraft-pixmaps
+pkgver=1.0
+pkgrel=1
+pkgdesc="Archcraft OS icons & other graphics."
+arch=('any')
+license=('GPL')
+provides=($pkgname)
+conflicts=($pkgname)
+depends=()
+
+package() {
+	# copy files
+	install -Dm 644 icons/* -t ${pkgdir}/usr/share/pixmaps/
+}

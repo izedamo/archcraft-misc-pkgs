@@ -1,0 +1,15 @@
+# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+
+pkgname=lxdm-theme-circuit
+pkgver=1.0
+pkgrel=1
+pkgdesc="A circuit styled lxdm theme for archcraft OS."
+arch=('any')
+license=('GPL')
+provides=($pkgname)
+conflicts=($pkgname)
+depends=('lxdm-gtk3')
+
+package() {
+	install -D -m644 archcraft-circuit/* -t ${pkgdir}/usr/share/lxdm/themes/archcraft-circuit
+}

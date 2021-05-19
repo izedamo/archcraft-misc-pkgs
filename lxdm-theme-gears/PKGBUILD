@@ -1,0 +1,15 @@
+# Maintainer: Aditya Shakya <adi1090x@gmail.com>
+
+pkgname=lxdm-theme-gears
+pkgver=1.0
+pkgrel=1
+pkgdesc="A gears styled lxdm theme for archcraft OS."
+arch=('any')
+license=('GPL')
+provides=($pkgname)
+conflicts=($pkgname)
+depends=('lxdm-gtk3')
+
+package() {
+	install -D -m644 archcraft-gears/* -t ${pkgdir}/usr/share/lxdm/themes/archcraft-gears
+}
