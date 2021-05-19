@@ -2,6 +2,6 @@
 Name=Getting Started
 Comment=Archcraft OS Helper
 Exec=/usr/bin/get_started.sh
-Icon=distributor-logo-archcraft
+Icon=archcraft_circle_red
 Type=Application
 Categories=GTK;System;Settings;

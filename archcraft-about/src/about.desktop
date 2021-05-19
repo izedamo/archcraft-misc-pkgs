@@ -2,6 +2,6 @@
 Name=About Creator
 Comment=About Aditya Shakya (@adi1090x)
 Exec=/usr/bin/about.sh
-Icon=distributor-logo-archcraft
+Icon=archcraft_circle_white
 Type=Application
 Categories=GTK;System;Settings;
