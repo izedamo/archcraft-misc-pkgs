@@ -23,6 +23,7 @@ LIST=(ckbcomp
 #	  compton-tryone-git
 	  timeshift
 	  cava
+	  xfce-polkit
 	  downgrade
 	  pyroom
 	  pygtk
