@@ -2,7 +2,7 @@
 
 pkgname=archcraft-pixmaps
 pkgver=1.0
-pkgrel=1
+pkgrel=2
 pkgdesc="Archcraft OS icons & other graphics."
 arch=('any')
 license=('GPL')
