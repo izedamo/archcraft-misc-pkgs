@@ -2,8 +2,8 @@
 
 pkgname=archcraft-about
 pkgver=1.0
-pkgrel=1
-pkgdesc="About the creator of Archcraft OS."
+pkgrel=2
+pkgdesc="About the developer of Archcraft OS."
 arch=('any')
 license=('GPL')
 provides=($pkgname)

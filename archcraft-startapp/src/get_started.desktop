@@ -4,4 +4,4 @@ Comment=Archcraft OS Helper
 Exec=/usr/bin/get_started.sh
 Icon=archcraft_circle_red
 Type=Application
-Categories=GTK;System;Settings;
+Categories=System
